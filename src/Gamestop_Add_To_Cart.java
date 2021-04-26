@@ -13,7 +13,7 @@ public class Gamestop_Add_To_Cart {
 
         driver.get("https://gamestop.com");
 
-
+        driver.manage().window().maximize();
 
         driver.findElement(By.linkText("PLAYSTATION 4")).click();
 

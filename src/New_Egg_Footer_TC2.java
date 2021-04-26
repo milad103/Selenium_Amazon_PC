@@ -15,13 +15,18 @@ public class New_Egg_Footer_TC2 {
 
         driver.get("https://newegg.com");
 
+        driver.manage().window().maximize();
+
         List<WebElement> footerElementz = driver.findElements(By.cssSelector("ul[ class='nav-col first']"));
 
+// Printing "CUSTOMER SERVICE" Column elements to the console
+
         for (WebElement footy1 : footerElementz) {
+
             System.out.println(footy1.getText());
 
 
-            ////a[@title='for your business']
+
         }
     }
 }

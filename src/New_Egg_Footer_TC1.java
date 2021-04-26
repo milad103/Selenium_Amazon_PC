@@ -16,10 +16,11 @@ public class New_Egg_Footer_TC1 {
 
         driver.get("https://newegg.com");
 
-
+        driver.manage().window().maximize();
 
        List<WebElement> footerElements = driver.findElements(By.xpath("//div[@class='page-footer-inner nav-row']"));
 
+        // Printing all Footer elements to the console
         for (WebElement footy : footerElements) {
             System.out.println(footy.getText());
 
